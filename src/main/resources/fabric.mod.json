@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "cheesecraft",
+	"version": "${version}",
+	"name": "cheesecraft",
+	"description": "A dairy technician's attempt at modding",
+	"authors": [
+		"Irishferret"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cheesecraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"irish.modid.Cheesecraft"
+		],
+		"client": [
+			"irish.modid.CheesecraftClient"
+		]
+	},
+	"mixins": [
+		"cheesecraft.mixins.json",
+		{
+			"config": "cheesecraft.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
