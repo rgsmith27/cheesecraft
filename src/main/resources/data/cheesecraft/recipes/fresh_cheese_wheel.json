@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "C C",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "cheesecraft:cheese_curds"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "cheesecraft:fresh_cheese_wheel"
+  }
+}

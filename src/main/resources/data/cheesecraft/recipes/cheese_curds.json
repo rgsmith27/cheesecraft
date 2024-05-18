@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "cheesecraft:rennet"
+    },
+    {
+      "item": "cheesecraft:salt"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cheesecraft:cheese_curds"
+  }
+}

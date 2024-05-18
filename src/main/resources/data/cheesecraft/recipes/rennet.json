@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cheesecraft:calf_stomach"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "id": "cheesecraft:rennet"
+  }
+}
