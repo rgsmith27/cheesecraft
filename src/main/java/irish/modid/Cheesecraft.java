@@ -1,5 +1,7 @@
 package irish.modid;
 
+import irish.modid.ModBlocks.ModBlocks;
+import irish.modid.BlockEntities.ModBlockEntities;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,5 +22,6 @@ public class Cheesecraft implements ModInitializer {
 		//Initializes all items
 		ModBlocks.initialize();
 		ModItems.initialize();
+		ModBlockEntities.initialize();
 	}
 }
