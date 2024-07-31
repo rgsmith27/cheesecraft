@@ -1,12 +1,13 @@
 {
   "item.cheesecraft.aged_cheese_wedge": "Aged Cheese Wedge",
   "block.cheesecraft.aged_cheese_wheel": "Aged Cheese Wheel",
-  "item.cheesecraft.calf_stomach": "Calf Stomach",
+  "item.cheesecraft.cow_stomach": "Cow Stomach",
   "item.cheesecraft.cheese_curds": "Cheese Curds",
   "item.cheesecraft.cheese_wedge": "Cheese Wedge",
   "block.cheesecraft.cheese_wheel": "Cheese Wheel",
   "block.cheesecraft.fresh_cheese_wheel": "Fresh Cheese Wheel",
   "item.cheesecraft.rennet": "Rennet",
   "item.cheesecraft.salt": "Salt",
-  "block.cheesecraft.salt_block": "Salt Block"
+  "block.cheesecraft.salt_block": "Salt Block",
+  "block.cheesecraft.cask": "Cask"
 }

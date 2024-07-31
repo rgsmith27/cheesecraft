@@ -2,7 +2,7 @@ package irish.modid.BlockEntities;
 
 import irish.modid.ImplementedInventory;
 import irish.modid.ModBlocks.CaskBlock;
-import irish.modid.ModItems;
+import irish.modid.ModItems.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.inventory.Inventories;

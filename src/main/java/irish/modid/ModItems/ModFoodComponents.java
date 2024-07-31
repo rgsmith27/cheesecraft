@@ -1,4 +1,4 @@
-package irish.modid;
+package irish.modid.ModItems;
 
 import net.minecraft.component.type.FoodComponent;
 

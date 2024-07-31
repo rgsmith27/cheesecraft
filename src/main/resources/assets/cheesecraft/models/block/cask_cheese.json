@@ -1,0 +1,21 @@
+{
+  "textures": {
+    "particle": "cheesecraft:block/cask_side",
+    "side": "cheesecraft:block/cask_side_cheese",
+    "top": "cheesecraft:block/cask_top",
+    "botton": "cheesecraft:block/cask_bottom"
+  },
+  "elements": [
+    {   "from": [ 0, 0, 0],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "down":  { "texture": "#bottom" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#side" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}

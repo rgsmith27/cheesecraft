@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "cheesecraft:calf_stomach"
+      "item": "cheesecraft:cow_stomach"
     }
   ],
   "result": {
-    "count": 8,
+    "count": 1,
     "id": "cheesecraft:rennet"
   }
 }

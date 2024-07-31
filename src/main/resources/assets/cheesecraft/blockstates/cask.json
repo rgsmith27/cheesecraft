@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "contents=0": {
+      "model": "cheesecraft:block/cask"
+    },
+    "contents=1": {
+      "model": "cheesecraft:block/cask_fresh"
+    },
+    "contents=2": {
+      "model": "cheesecraft:block/cask_cheese"
+    },
+    "contents=3": {
+      "model": "cheesecraft:block/cask_aged"
+    }
+  }
+  }

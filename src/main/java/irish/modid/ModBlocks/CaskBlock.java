@@ -3,7 +3,7 @@ package irish.modid.ModBlocks;
 import com.mojang.serialization.MapCodec;
 import irish.modid.BlockEntities.CaskBlockEntity;
 import irish.modid.BlockEntities.ModBlockEntities;
-import irish.modid.ModItems;
+import irish.modid.ModItems.ModItems;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
@@ -13,6 +13,7 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -89,6 +90,7 @@ public class CaskBlock extends BlockWithEntity {
         else{
             player.getInventory().offerOrDrop(blockEntityInventory.getStack(0));
             blockEntityInventory.removeStack(0);
+            world.setBlockState(blockPos, blockState.with(CONTENTS, 0));
         }
         //resets the age after the cask is interacted with to prevent possible carryover
         if(blockEntity instanceof CaskBlockEntity){
@@ -96,4 +98,16 @@ public class CaskBlock extends BlockWithEntity {
         }
         return ActionResult.SUCCESS;
     }
+
+    @Override
+    //drops the inventory contents of the cask on break
+    public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player){
+        BlockEntity blockEntity = world.getBlockEntity(pos);
+        Inventory blockEntityInventory = (Inventory) world.getBlockEntity(pos);
+        if(blockEntity != null && !world.isClient && !blockEntityInventory.getStack(0).isEmpty()){
+            ItemScatterer.spawn(world, pos.getX(), pos.getY(), pos.getZ(), blockEntityInventory.getStack(0));
+        }
+        return super.onBreak(world, pos, state, player);
+    }
+
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "cheesecraft:item/fresh_cheese_wheel"
+  }
+}

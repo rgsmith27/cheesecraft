@@ -1,0 +1,20 @@
+{
+  "textures": {
+    "particle": "cheesecraft:block/cheese_wheel_side",
+    "side": "cheesecraft:block/cheese_wheel_side",
+    "face": "cheesecraft:block/cheese_wheel_face"
+  },
+  "elements": [
+    {   "from": [ 1, 0, 1 ],
+      "to": [ 15, 8, 15 ],
+      "faces": {
+        "down":  { "texture": "#face" },
+        "up":    { "texture": "#face" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#side" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}
